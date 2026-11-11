@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager CRUD</h1>
+    
+    <form id="crud-form">
+      <input type="hidden" id="record-id">
+      <input type="text" id="name-input" placeholder="Enter item name" required>
+      <input type="text" id="role-input" placeholder="Enter category or role" required>
+      <button type="submit" id="submit-btn">Add Item</button>
+      <button type="button" id="cancel-btn" class="hidden">Cancel</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Category / Role</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
